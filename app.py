@@ -12,13 +12,6 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
-
-@app.route('/send-email', methods=['POST'])
-def send_email():
-    data = request.json
-    name = data['name']
-    email = data['email']
-
 @app.route('/send-email', methods=['POST'])
 def send_email():
     data = request.json
