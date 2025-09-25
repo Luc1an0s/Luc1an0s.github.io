@@ -8,7 +8,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://lucianomaciel.dev"}}, supports_credentials=True)
+CORS(app)
 
 @app.route('/send-email', methods=['POST'])
 def send_email():
