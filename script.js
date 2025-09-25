@@ -67,7 +67,7 @@ contactForm.addEventListener("submit", function (e) {
   submitBtn.innerHTML = '<span class="loading"></span> Enviando...'
   submitBtn.disabled = true
 
-  fetch('https://luc1an0s-github-io.onrender.com/send-email', {
+  fetch('https://web-production-85276e.up.railway.app/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
