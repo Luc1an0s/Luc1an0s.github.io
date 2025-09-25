@@ -10,7 +10,7 @@ from email.message import EmailMessage
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://lucianomaciel.dev"}})
 
 @app.route('/send-email', methods=['POST'])
 def send_email():
