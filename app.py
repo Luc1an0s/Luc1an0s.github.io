@@ -23,7 +23,7 @@ def send_email():
     msg = EmailMessage()
     msg['Subject'] = subject
     msg['From'] = os.getenv('EMAIL_USER')
-    msg['To'] = 'lucianomaciel53@gmail.com' 
+    msg['To'] = 'lucianomaciel53@gmail.com'
     msg.set_content(f'Nome: {name}\nEmail: {email}\nMensagem: {message}')
 
     try:
