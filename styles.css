@@ -592,6 +592,22 @@ section {
   .container {
     padding: 0 15px;
   }
+
+  .project-card,
+  .project-content,
+  .contact-form {
+    padding: 1rem;
+  }
+  .project-image {
+    height: 120px;
+    font-size: 2rem;
+  }
+  .btn,
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
 }
 
 /* Smooth Scrolling */
